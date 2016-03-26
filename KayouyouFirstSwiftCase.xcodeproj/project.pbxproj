@@ -1,0 +1,1029 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BC4E10FB95899A26241B504 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DE14D7A56193F63939AD25 /* Pods.framework */; };
+		EF89CDA81CA648B7005E810F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDA71CA648B7005E810F /* AppDelegate.swift */; };
+		EF89CDB01CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDAE1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodeld */; };
+		EF89CDB21CA648B7005E810F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF89CDB11CA648B7005E810F /* Assets.xcassets */; };
+		EF89CDB51CA648B7005E810F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF89CDB31CA648B7005E810F /* LaunchScreen.storyboard */; };
+		EF89CDC01CA648B7005E810F /* KayouyouFirstSwiftCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDBF1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.swift */; };
+		EF89CDCB1CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDCA1CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.swift */; };
+		EF89CDDE1CA66073005E810F /* GlobalSeetingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDDD1CA66073005E810F /* GlobalSeetingFile.swift */; };
+		EF89CDE01CA66636005E810F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDDF1CA66636005E810F /* BaseViewController.swift */; };
+		EF89CDE71CA66AC6005E810F /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDE61CA66AC6005E810F /* Color + Extension.swift */; };
+		EF89CDE91CA66CBD005E810F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDE81CA66CBD005E810F /* WelcomeViewController.swift */; };
+		EF89CDEB1CA6711C005E810F /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDEA1CA6711B005E810F /* WelcomeCell.swift */; };
+		EF89CDED1CA683F6005E810F /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDEC1CA683F6005E810F /* ADViewController.swift */; };
+		EF89CE751CA68AE5005E810F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDF21CA68AE5005E810F /* MJRefreshAutoFooter.m */; };
+		EF89CE761CA68AE5005E810F /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDF41CA68AE5005E810F /* MJRefreshBackFooter.m */; };
+		EF89CE771CA68AE5005E810F /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDF61CA68AE5005E810F /* MJRefreshComponent.m */; };
+		EF89CE781CA68AE5005E810F /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDF81CA68AE5005E810F /* MJRefreshFooter.m */; };
+		EF89CE791CA68AE5005E810F /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDFA1CA68AE5005E810F /* MJRefreshHeader.m */; };
+		EF89CE7A1CA68AE5005E810F /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CDFF1CA68AE5005E810F /* MJRefreshAutoGifFooter.m */; };
+		EF89CE7B1CA68AE5005E810F /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE011CA68AE5005E810F /* MJRefreshAutoNormalFooter.m */; };
+		EF89CE7C1CA68AE5005E810F /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE031CA68AE5005E810F /* MJRefreshAutoStateFooter.m */; };
+		EF89CE7D1CA68AE5005E810F /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE061CA68AE5005E810F /* MJRefreshBackGifFooter.m */; };
+		EF89CE7E1CA68AE5005E810F /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE081CA68AE5005E810F /* MJRefreshBackNormalFooter.m */; };
+		EF89CE7F1CA68AE5005E810F /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE0A1CA68AE5005E810F /* MJRefreshBackStateFooter.m */; };
+		EF89CE801CA68AE5005E810F /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE0D1CA68AE5005E810F /* MJRefreshGifHeader.m */; };
+		EF89CE811CA68AE5005E810F /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE0F1CA68AE5005E810F /* MJRefreshNormalHeader.m */; };
+		EF89CE821CA68AE5005E810F /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE111CA68AE5005E810F /* MJRefreshStateHeader.m */; };
+		EF89CE831CA68AE5005E810F /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE121CA68AE5005E810F /* MJRefresh.bundle */; };
+		EF89CE841CA68AE5005E810F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE151CA68AE5005E810F /* MJRefreshConst.m */; };
+		EF89CE851CA68AE5005E810F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE171CA68AE5005E810F /* UIScrollView+MJExtension.m */; };
+		EF89CE861CA68AE5005E810F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE191CA68AE5005E810F /* UIScrollView+MJRefresh.m */; };
+		EF89CE871CA68AE5005E810F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89CE1B1CA68AE5005E810F /* UIView+MJExtension.m */; };
+		EF89CE981CA68AE5005E810F /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE401CA68AE5005E810F /* UMSocialLocalizable.strings */; };
+		EF89CE991CA68AE5005E810F /* libUMSocial_Sdk_4.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE4E1CA68AE5005E810F /* libUMSocial_Sdk_4.4.a */; };
+		EF89CE9A1CA68AE5005E810F /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE501CA68AE5005E810F /* UMSCommentDetailController.xib */; };
+		EF89CE9B1CA68AE5005E810F /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE511CA68AE5005E810F /* UMSCommentInputController.xib */; };
+		EF89CE9C1CA68AE5005E810F /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE521CA68AE5005E810F /* UMSCommentInputControlleriPad.xib */; };
+		EF89CE9D1CA68AE5005E810F /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE531CA68AE5005E810F /* UMShareEditViewController.xib */; };
+		EF89CE9E1CA68AE5005E810F /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE541CA68AE5005E810F /* UMShareEditViewControlleriPad.xib */; };
+		EF89CE9F1CA68AE5005E810F /* UMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE551CA68AE5005E810F /* UMSLoginViewController.xib */; };
+		EF89CEA01CA68AE5005E810F /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE561CA68AE5005E810F /* UMSnsAccountViewController.xib */; };
+		EF89CEA11CA68AE5005E810F /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE571CA68AE5005E810F /* UMSShareListController.xib */; };
+		EF89CEA21CA68AE5005E810F /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE581CA68AE5005E810F /* UMSocialSDKResourcesNew.bundle */; };
+		EF89CEA31CA68AE5005E810F /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE5C1CA68AE5005E810F /* libSocialSinaSSO.a */; };
+		EF89CEA41CA68AE5005E810F /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE5D1CA68AE5005E810F /* libWeiboSDK.a */; };
+		EF89CEA51CA68AE5005E810F /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE671CA68AE5005E810F /* WeiboSDK.bundle */; };
+		EF89CEA61CA68AE5005E810F /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE6B1CA68AE5005E810F /* libSocialQQ.a */; };
+		EF89CEA71CA68AE5005E810F /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE6C1CA68AE5005E810F /* TencentOpenAPI.framework */; };
+		EF89CEA81CA68AE5005E810F /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89CE6D1CA68AE5005E810F /* TencentOpenApi_IOS_Bundle.bundle */; };
+		EF89CEA91CA68AE5005E810F /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE701CA68AE5005E810F /* libSocialWechat.a */; };
+		EF89CEAA1CA68AE5005E810F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89CE711CA68AE5005E810F /* libWeChatSDK.a */; };
+		EF89CEAD1CA69427005E810F /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89CEAC1CA69427005E810F /* SwiftDictModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF89CDBC1CA648B7005E810F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF89CD9C1CA648B6005E810F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF89CDA31CA648B7005E810F;
+			remoteInfo = KayouyouFirstSwiftCase;
+		};
+		EF89CDC71CA648B7005E810F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF89CD9C1CA648B6005E810F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF89CDA31CA648B7005E810F;
+			remoteInfo = KayouyouFirstSwiftCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F76E23F03A2D6B65A201EFF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		985A426ED17CB64C7E3FBFF6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A8DE14D7A56193F63939AD25 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89CDA41CA648B7005E810F /* KayouyouFirstSwiftCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KayouyouFirstSwiftCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89CDA71CA648B7005E810F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF89CDAF1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KayouyouFirstSwiftCase.xcdatamodel; sourceTree = "<group>"; };
+		EF89CDB11CA648B7005E810F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF89CDB41CA648B7005E810F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF89CDB61CA648B7005E810F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89CDBB1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayouyouFirstSwiftCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89CDBF1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayouyouFirstSwiftCaseTests.swift; sourceTree = "<group>"; };
+		EF89CDC11CA648B7005E810F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89CDC61CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayouyouFirstSwiftCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89CDCA1CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayouyouFirstSwiftCaseUITests.swift; sourceTree = "<group>"; };
+		EF89CDCC1CA648B7005E810F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89CDDD1CA66073005E810F /* GlobalSeetingFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSeetingFile.swift; sourceTree = "<group>"; };
+		EF89CDDF1CA66636005E810F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = LaunchFile/BaseViewController.swift; sourceTree = "<group>"; };
+		EF89CDE61CA66AC6005E810F /* Color + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		EF89CDE81CA66CBD005E810F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = LaunchFile/WelcomeViewController.swift; sourceTree = "<group>"; };
+		EF89CDEA1CA6711B005E810F /* WelcomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeCell.swift; sourceTree = "<group>"; };
+		EF89CDEC1CA683F6005E810F /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		EF89CDF11CA68AE5005E810F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		EF89CDF21CA68AE5005E810F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		EF89CDF31CA68AE5005E810F /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		EF89CDF41CA68AE5005E810F /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		EF89CDF51CA68AE5005E810F /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		EF89CDF61CA68AE5005E810F /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		EF89CDF71CA68AE5005E810F /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		EF89CDF81CA68AE5005E810F /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		EF89CDF91CA68AE5005E810F /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		EF89CDFA1CA68AE5005E810F /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		EF89CDFE1CA68AE5005E810F /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		EF89CDFF1CA68AE5005E810F /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		EF89CE001CA68AE5005E810F /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		EF89CE011CA68AE5005E810F /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		EF89CE021CA68AE5005E810F /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		EF89CE031CA68AE5005E810F /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		EF89CE051CA68AE5005E810F /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		EF89CE061CA68AE5005E810F /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		EF89CE071CA68AE5005E810F /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		EF89CE081CA68AE5005E810F /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		EF89CE091CA68AE5005E810F /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		EF89CE0A1CA68AE5005E810F /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		EF89CE0C1CA68AE5005E810F /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		EF89CE0D1CA68AE5005E810F /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		EF89CE0E1CA68AE5005E810F /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		EF89CE0F1CA68AE5005E810F /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		EF89CE101CA68AE5005E810F /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		EF89CE111CA68AE5005E810F /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		EF89CE121CA68AE5005E810F /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		EF89CE131CA68AE5005E810F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		EF89CE141CA68AE5005E810F /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		EF89CE151CA68AE5005E810F /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		EF89CE161CA68AE5005E810F /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		EF89CE171CA68AE5005E810F /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		EF89CE181CA68AE5005E810F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		EF89CE191CA68AE5005E810F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		EF89CE1A1CA68AE5005E810F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		EF89CE1B1CA68AE5005E810F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		EF89CE411CA68AE5005E810F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
+		EF89CE431CA68AE5005E810F /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
+		EF89CE441CA68AE5005E810F /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
+		EF89CE451CA68AE5005E810F /* UMSocialBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBar.h; sourceTree = "<group>"; };
+		EF89CE461CA68AE5005E810F /* UMSocialConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialConfig.h; sourceTree = "<group>"; };
+		EF89CE471CA68AE5005E810F /* UMSocialControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerService.h; sourceTree = "<group>"; };
+		EF89CE481CA68AE5005E810F /* UMSocialControllerServiceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerServiceComment.h; sourceTree = "<group>"; };
+		EF89CE491CA68AE5005E810F /* UMSocialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialData.h; sourceTree = "<group>"; };
+		EF89CE4A1CA68AE5005E810F /* UMSocialDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataService.h; sourceTree = "<group>"; };
+		EF89CE4B1CA68AE5005E810F /* UMSocialSnsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsData.h; sourceTree = "<group>"; };
+		EF89CE4C1CA68AE5005E810F /* UMSocialSnsPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsPlatformManager.h; sourceTree = "<group>"; };
+		EF89CE4D1CA68AE5005E810F /* UMSocialSnsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsService.h; sourceTree = "<group>"; };
+		EF89CE4E1CA68AE5005E810F /* libUMSocial_Sdk_4.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_4.4.a; sourceTree = "<group>"; };
+		EF89CE501CA68AE5005E810F /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
+		EF89CE511CA68AE5005E810F /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
+		EF89CE521CA68AE5005E810F /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
+		EF89CE531CA68AE5005E810F /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
+		EF89CE541CA68AE5005E810F /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
+		EF89CE551CA68AE5005E810F /* UMSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSLoginViewController.xib; sourceTree = "<group>"; };
+		EF89CE561CA68AE5005E810F /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
+		EF89CE571CA68AE5005E810F /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
+		EF89CE581CA68AE5005E810F /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
+		EF89CE591CA68AE5005E810F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
+		EF89CE5C1CA68AE5005E810F /* libSocialSinaSSO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSinaSSO.a; sourceTree = "<group>"; };
+		EF89CE5D1CA68AE5005E810F /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		EF89CE5E1CA68AE5005E810F /* UMSocialSinaSSOHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaSSOHandler.h; sourceTree = "<group>"; };
+		EF89CE5F1CA68AE5005E810F /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		EF89CE601CA68AE5005E810F /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		EF89CE611CA68AE5005E810F /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		EF89CE621CA68AE5005E810F /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		EF89CE631CA68AE5005E810F /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		EF89CE641CA68AE5005E810F /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		EF89CE651CA68AE5005E810F /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		EF89CE661CA68AE5005E810F /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		EF89CE671CA68AE5005E810F /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		EF89CE681CA68AE5005E810F /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		EF89CE691CA68AE5005E810F /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		EF89CE6B1CA68AE5005E810F /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		EF89CE6C1CA68AE5005E810F /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		EF89CE6D1CA68AE5005E810F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		EF89CE6E1CA68AE5005E810F /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		EF89CE701CA68AE5005E810F /* libSocialWechat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWechat.a; sourceTree = "<group>"; };
+		EF89CE711CA68AE5005E810F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		EF89CE721CA68AE5005E810F /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		EF89CE731CA68AE5005E810F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		EF89CE741CA68AE5005E810F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		EF89CEAC1CA69427005E810F /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF89CDA11CA648B7005E810F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89CEAA1CA68AE5005E810F /* libWeChatSDK.a in Frameworks */,
+				EF89CEA71CA68AE5005E810F /* TencentOpenAPI.framework in Frameworks */,
+				EF89CEA61CA68AE5005E810F /* libSocialQQ.a in Frameworks */,
+				EF89CE991CA68AE5005E810F /* libUMSocial_Sdk_4.4.a in Frameworks */,
+				EF89CEA41CA68AE5005E810F /* libWeiboSDK.a in Frameworks */,
+				EF89CEA91CA68AE5005E810F /* libSocialWechat.a in Frameworks */,
+				EF89CEA31CA68AE5005E810F /* libSocialSinaSSO.a in Frameworks */,
+				2BC4E10FB95899A26241B504 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDB81CA648B7005E810F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDC31CA648B7005E810F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C451E587BCBAFCE40189837E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F76E23F03A2D6B65A201EFF /* Pods.debug.xcconfig */,
+				985A426ED17CB64C7E3FBFF6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF89CD9B1CA648B6005E810F = {
+			isa = PBXGroup;
+			children = (
+				EF89CDDD1CA66073005E810F /* GlobalSeetingFile.swift */,
+				EF89CDA61CA648B7005E810F /* KayouyouFirstSwiftCase */,
+				EF89CDBE1CA648B7005E810F /* KayouyouFirstSwiftCaseTests */,
+				EF89CDC91CA648B7005E810F /* KayouyouFirstSwiftCaseUITests */,
+				EF89CDA51CA648B7005E810F /* Products */,
+				EF89CDEE1CA68AE5005E810F /* Vender */,
+				C451E587BCBAFCE40189837E /* Pods */,
+				FA783614EBA4B24C6DB39432 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF89CDA51CA648B7005E810F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDA41CA648B7005E810F /* KayouyouFirstSwiftCase.app */,
+				EF89CDBB1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.xctest */,
+				EF89CDC61CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF89CDA61CA648B7005E810F /* KayouyouFirstSwiftCase */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDA71CA648B7005E810F /* AppDelegate.swift */,
+				EF89CDDF1CA66636005E810F /* BaseViewController.swift */,
+				EF89CDE81CA66CBD005E810F /* WelcomeViewController.swift */,
+				EF89CDEA1CA6711B005E810F /* WelcomeCell.swift */,
+				EF89CDEC1CA683F6005E810F /* ADViewController.swift */,
+				EF89CEAC1CA69427005E810F /* SwiftDictModel.swift */,
+				EF89CDE11CA666D7005E810F /* CategaryOrExtension */,
+				EF89CDB11CA648B7005E810F /* Assets.xcassets */,
+				EF89CDB31CA648B7005E810F /* LaunchScreen.storyboard */,
+				EF89CDB61CA648B7005E810F /* Info.plist */,
+				EF89CDAE1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodeld */,
+			);
+			path = KayouyouFirstSwiftCase;
+			sourceTree = "<group>";
+		};
+		EF89CDBE1CA648B7005E810F /* KayouyouFirstSwiftCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDBF1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.swift */,
+				EF89CDC11CA648B7005E810F /* Info.plist */,
+			);
+			path = KayouyouFirstSwiftCaseTests;
+			sourceTree = "<group>";
+		};
+		EF89CDC91CA648B7005E810F /* KayouyouFirstSwiftCaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDCA1CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.swift */,
+				EF89CDCC1CA648B7005E810F /* Info.plist */,
+			);
+			path = KayouyouFirstSwiftCaseUITests;
+			sourceTree = "<group>";
+		};
+		EF89CDE11CA666D7005E810F /* CategaryOrExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDE61CA66AC6005E810F /* Color + Extension.swift */,
+			);
+			name = CategaryOrExtension;
+			sourceTree = "<group>";
+		};
+		EF89CDEE1CA68AE5005E810F /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDEF1CA68AE5005E810F /* MJRefresh */,
+				EF89CE3E1CA68AE5005E810F /* UMengSDK */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		EF89CDEF1CA68AE5005E810F /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDF01CA68AE5005E810F /* Base */,
+				EF89CDFB1CA68AE5005E810F /* Custom */,
+				EF89CE121CA68AE5005E810F /* MJRefresh.bundle */,
+				EF89CE131CA68AE5005E810F /* MJRefresh.h */,
+				EF89CE141CA68AE5005E810F /* MJRefreshConst.h */,
+				EF89CE151CA68AE5005E810F /* MJRefreshConst.m */,
+				EF89CE161CA68AE5005E810F /* UIScrollView+MJExtension.h */,
+				EF89CE171CA68AE5005E810F /* UIScrollView+MJExtension.m */,
+				EF89CE181CA68AE5005E810F /* UIScrollView+MJRefresh.h */,
+				EF89CE191CA68AE5005E810F /* UIScrollView+MJRefresh.m */,
+				EF89CE1A1CA68AE5005E810F /* UIView+MJExtension.h */,
+				EF89CE1B1CA68AE5005E810F /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		EF89CDF01CA68AE5005E810F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDF11CA68AE5005E810F /* MJRefreshAutoFooter.h */,
+				EF89CDF21CA68AE5005E810F /* MJRefreshAutoFooter.m */,
+				EF89CDF31CA68AE5005E810F /* MJRefreshBackFooter.h */,
+				EF89CDF41CA68AE5005E810F /* MJRefreshBackFooter.m */,
+				EF89CDF51CA68AE5005E810F /* MJRefreshComponent.h */,
+				EF89CDF61CA68AE5005E810F /* MJRefreshComponent.m */,
+				EF89CDF71CA68AE5005E810F /* MJRefreshFooter.h */,
+				EF89CDF81CA68AE5005E810F /* MJRefreshFooter.m */,
+				EF89CDF91CA68AE5005E810F /* MJRefreshHeader.h */,
+				EF89CDFA1CA68AE5005E810F /* MJRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF89CDFB1CA68AE5005E810F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDFC1CA68AE5005E810F /* Footer */,
+				EF89CE0B1CA68AE5005E810F /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		EF89CDFC1CA68AE5005E810F /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDFD1CA68AE5005E810F /* Auto */,
+				EF89CE041CA68AE5005E810F /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		EF89CDFD1CA68AE5005E810F /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CDFE1CA68AE5005E810F /* MJRefreshAutoGifFooter.h */,
+				EF89CDFF1CA68AE5005E810F /* MJRefreshAutoGifFooter.m */,
+				EF89CE001CA68AE5005E810F /* MJRefreshAutoNormalFooter.h */,
+				EF89CE011CA68AE5005E810F /* MJRefreshAutoNormalFooter.m */,
+				EF89CE021CA68AE5005E810F /* MJRefreshAutoStateFooter.h */,
+				EF89CE031CA68AE5005E810F /* MJRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		EF89CE041CA68AE5005E810F /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE051CA68AE5005E810F /* MJRefreshBackGifFooter.h */,
+				EF89CE061CA68AE5005E810F /* MJRefreshBackGifFooter.m */,
+				EF89CE071CA68AE5005E810F /* MJRefreshBackNormalFooter.h */,
+				EF89CE081CA68AE5005E810F /* MJRefreshBackNormalFooter.m */,
+				EF89CE091CA68AE5005E810F /* MJRefreshBackStateFooter.h */,
+				EF89CE0A1CA68AE5005E810F /* MJRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		EF89CE0B1CA68AE5005E810F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE0C1CA68AE5005E810F /* MJRefreshGifHeader.h */,
+				EF89CE0D1CA68AE5005E810F /* MJRefreshGifHeader.m */,
+				EF89CE0E1CA68AE5005E810F /* MJRefreshNormalHeader.h */,
+				EF89CE0F1CA68AE5005E810F /* MJRefreshNormalHeader.m */,
+				EF89CE101CA68AE5005E810F /* MJRefreshStateHeader.h */,
+				EF89CE111CA68AE5005E810F /* MJRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EF89CE3E1CA68AE5005E810F /* UMengSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE3F1CA68AE5005E810F /* UMSocial_Sdk_4.4 */,
+				EF89CE5A1CA68AE5005E810F /* UMSocial_Sdk_Extra_Frameworks */,
+			);
+			path = UMengSDK;
+			sourceTree = "<group>";
+		};
+		EF89CE3F1CA68AE5005E810F /* UMSocial_Sdk_4.4 */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE401CA68AE5005E810F /* UMSocialLocalizable.strings */,
+				EF89CE421CA68AE5005E810F /* Header */,
+				EF89CE4E1CA68AE5005E810F /* libUMSocial_Sdk_4.4.a */,
+				EF89CE4F1CA68AE5005E810F /* SocialSDKXib */,
+				EF89CE581CA68AE5005E810F /* UMSocialSDKResourcesNew.bundle */,
+			);
+			path = UMSocial_Sdk_4.4;
+			sourceTree = "<group>";
+		};
+		EF89CE421CA68AE5005E810F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE431CA68AE5005E810F /* UMSocial.h */,
+				EF89CE441CA68AE5005E810F /* UMSocialAccountManager.h */,
+				EF89CE451CA68AE5005E810F /* UMSocialBar.h */,
+				EF89CE461CA68AE5005E810F /* UMSocialConfig.h */,
+				EF89CE471CA68AE5005E810F /* UMSocialControllerService.h */,
+				EF89CE481CA68AE5005E810F /* UMSocialControllerServiceComment.h */,
+				EF89CE491CA68AE5005E810F /* UMSocialData.h */,
+				EF89CE4A1CA68AE5005E810F /* UMSocialDataService.h */,
+				EF89CE4B1CA68AE5005E810F /* UMSocialSnsData.h */,
+				EF89CE4C1CA68AE5005E810F /* UMSocialSnsPlatformManager.h */,
+				EF89CE4D1CA68AE5005E810F /* UMSocialSnsService.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EF89CE4F1CA68AE5005E810F /* SocialSDKXib */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE501CA68AE5005E810F /* UMSCommentDetailController.xib */,
+				EF89CE511CA68AE5005E810F /* UMSCommentInputController.xib */,
+				EF89CE521CA68AE5005E810F /* UMSCommentInputControlleriPad.xib */,
+				EF89CE531CA68AE5005E810F /* UMShareEditViewController.xib */,
+				EF89CE541CA68AE5005E810F /* UMShareEditViewControlleriPad.xib */,
+				EF89CE551CA68AE5005E810F /* UMSLoginViewController.xib */,
+				EF89CE561CA68AE5005E810F /* UMSnsAccountViewController.xib */,
+				EF89CE571CA68AE5005E810F /* UMSShareListController.xib */,
+			);
+			path = SocialSDKXib;
+			sourceTree = "<group>";
+		};
+		EF89CE5A1CA68AE5005E810F /* UMSocial_Sdk_Extra_Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE5B1CA68AE5005E810F /* SinaSSO */,
+				EF89CE6A1CA68AE5005E810F /* TencentOpenAPI */,
+				EF89CE6F1CA68AE5005E810F /* Wechat */,
+			);
+			path = UMSocial_Sdk_Extra_Frameworks;
+			sourceTree = "<group>";
+		};
+		EF89CE5B1CA68AE5005E810F /* SinaSSO */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE5C1CA68AE5005E810F /* libSocialSinaSSO.a */,
+				EF89CE5D1CA68AE5005E810F /* libWeiboSDK.a */,
+				EF89CE5E1CA68AE5005E810F /* UMSocialSinaSSOHandler.h */,
+				EF89CE5F1CA68AE5005E810F /* WBHttpRequest+WeiboGame.h */,
+				EF89CE601CA68AE5005E810F /* WBHttpRequest+WeiboShare.h */,
+				EF89CE611CA68AE5005E810F /* WBHttpRequest+WeiboToken.h */,
+				EF89CE621CA68AE5005E810F /* WBHttpRequest+WeiboUser.h */,
+				EF89CE631CA68AE5005E810F /* WBHttpRequest.h */,
+				EF89CE641CA68AE5005E810F /* WBSDKBasicButton.h */,
+				EF89CE651CA68AE5005E810F /* WBSDKCommentButton.h */,
+				EF89CE661CA68AE5005E810F /* WBSDKRelationshipButton.h */,
+				EF89CE671CA68AE5005E810F /* WeiboSDK.bundle */,
+				EF89CE681CA68AE5005E810F /* WeiboSDK.h */,
+				EF89CE691CA68AE5005E810F /* WeiboUser.h */,
+			);
+			path = SinaSSO;
+			sourceTree = "<group>";
+		};
+		EF89CE6A1CA68AE5005E810F /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE6B1CA68AE5005E810F /* libSocialQQ.a */,
+				EF89CE6C1CA68AE5005E810F /* TencentOpenAPI.framework */,
+				EF89CE6D1CA68AE5005E810F /* TencentOpenApi_IOS_Bundle.bundle */,
+				EF89CE6E1CA68AE5005E810F /* UMSocialQQHandler.h */,
+			);
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
+		EF89CE6F1CA68AE5005E810F /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				EF89CE701CA68AE5005E810F /* libSocialWechat.a */,
+				EF89CE711CA68AE5005E810F /* libWeChatSDK.a */,
+				EF89CE721CA68AE5005E810F /* UMSocialWechatHandler.h */,
+				EF89CE731CA68AE5005E810F /* WXApi.h */,
+				EF89CE741CA68AE5005E810F /* WXApiObject.h */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		FA783614EBA4B24C6DB39432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8DE14D7A56193F63939AD25 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF89CDA31CA648B7005E810F /* KayouyouFirstSwiftCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF89CDCF1CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCase" */;
+			buildPhases = (
+				5546901FB8C1904EB4BA233F /* Check Pods Manifest.lock */,
+				EF89CDA01CA648B7005E810F /* Sources */,
+				EF89CDA11CA648B7005E810F /* Frameworks */,
+				EF89CDA21CA648B7005E810F /* Resources */,
+				45309B3738F4BC2A358C89F5 /* Embed Pods Frameworks */,
+				BA044AC4C021DE96D324D7AC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KayouyouFirstSwiftCase;
+			productName = KayouyouFirstSwiftCase;
+			productReference = EF89CDA41CA648B7005E810F /* KayouyouFirstSwiftCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF89CDBA1CA648B7005E810F /* KayouyouFirstSwiftCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF89CDD21CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCaseTests" */;
+			buildPhases = (
+				EF89CDB71CA648B7005E810F /* Sources */,
+				EF89CDB81CA648B7005E810F /* Frameworks */,
+				EF89CDB91CA648B7005E810F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF89CDBD1CA648B7005E810F /* PBXTargetDependency */,
+			);
+			name = KayouyouFirstSwiftCaseTests;
+			productName = KayouyouFirstSwiftCaseTests;
+			productReference = EF89CDBB1CA648B7005E810F /* KayouyouFirstSwiftCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF89CDC51CA648B7005E810F /* KayouyouFirstSwiftCaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF89CDD51CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCaseUITests" */;
+			buildPhases = (
+				EF89CDC21CA648B7005E810F /* Sources */,
+				EF89CDC31CA648B7005E810F /* Frameworks */,
+				EF89CDC41CA648B7005E810F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF89CDC81CA648B7005E810F /* PBXTargetDependency */,
+			);
+			name = KayouyouFirstSwiftCaseUITests;
+			productName = KayouyouFirstSwiftCaseUITests;
+			productReference = EF89CDC61CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF89CD9C1CA648B6005E810F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "叶杨杨";
+				TargetAttributes = {
+					EF89CDA31CA648B7005E810F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EF89CDBA1CA648B7005E810F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EF89CDA31CA648B7005E810F;
+					};
+					EF89CDC51CA648B7005E810F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EF89CDA31CA648B7005E810F;
+					};
+				};
+			};
+			buildConfigurationList = EF89CD9F1CA648B6005E810F /* Build configuration list for PBXProject "KayouyouFirstSwiftCase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = EF89CD9B1CA648B6005E810F;
+			productRefGroup = EF89CDA51CA648B7005E810F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF89CDA31CA648B7005E810F /* KayouyouFirstSwiftCase */,
+				EF89CDBA1CA648B7005E810F /* KayouyouFirstSwiftCaseTests */,
+				EF89CDC51CA648B7005E810F /* KayouyouFirstSwiftCaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF89CDA21CA648B7005E810F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89CE9D1CA68AE5005E810F /* UMShareEditViewController.xib in Resources */,
+				EF89CE9B1CA68AE5005E810F /* UMSCommentInputController.xib in Resources */,
+				EF89CDB51CA648B7005E810F /* LaunchScreen.storyboard in Resources */,
+				EF89CEA81CA68AE5005E810F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				EF89CE9A1CA68AE5005E810F /* UMSCommentDetailController.xib in Resources */,
+				EF89CE9F1CA68AE5005E810F /* UMSLoginViewController.xib in Resources */,
+				EF89CE9C1CA68AE5005E810F /* UMSCommentInputControlleriPad.xib in Resources */,
+				EF89CE9E1CA68AE5005E810F /* UMShareEditViewControlleriPad.xib in Resources */,
+				EF89CDB21CA648B7005E810F /* Assets.xcassets in Resources */,
+				EF89CE981CA68AE5005E810F /* UMSocialLocalizable.strings in Resources */,
+				EF89CE831CA68AE5005E810F /* MJRefresh.bundle in Resources */,
+				EF89CEA01CA68AE5005E810F /* UMSnsAccountViewController.xib in Resources */,
+				EF89CEA51CA68AE5005E810F /* WeiboSDK.bundle in Resources */,
+				EF89CEA11CA68AE5005E810F /* UMSShareListController.xib in Resources */,
+				EF89CEA21CA68AE5005E810F /* UMSocialSDKResourcesNew.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDB91CA648B7005E810F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDC41CA648B7005E810F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45309B3738F4BC2A358C89F5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5546901FB8C1904EB4BA233F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA044AC4C021DE96D324D7AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF89CDA01CA648B7005E810F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89CDEB1CA6711C005E810F /* WelcomeCell.swift in Sources */,
+				EF89CE7D1CA68AE5005E810F /* MJRefreshBackGifFooter.m in Sources */,
+				EF89CE7A1CA68AE5005E810F /* MJRefreshAutoGifFooter.m in Sources */,
+				EF89CE811CA68AE5005E810F /* MJRefreshNormalHeader.m in Sources */,
+				EF89CDB01CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodeld in Sources */,
+				EF89CDE01CA66636005E810F /* BaseViewController.swift in Sources */,
+				EF89CE7C1CA68AE5005E810F /* MJRefreshAutoStateFooter.m in Sources */,
+				EF89CE841CA68AE5005E810F /* MJRefreshConst.m in Sources */,
+				EF89CDDE1CA66073005E810F /* GlobalSeetingFile.swift in Sources */,
+				EF89CE871CA68AE5005E810F /* UIView+MJExtension.m in Sources */,
+				EF89CDE91CA66CBD005E810F /* WelcomeViewController.swift in Sources */,
+				EF89CE801CA68AE5005E810F /* MJRefreshGifHeader.m in Sources */,
+				EF89CE781CA68AE5005E810F /* MJRefreshFooter.m in Sources */,
+				EF89CE851CA68AE5005E810F /* UIScrollView+MJExtension.m in Sources */,
+				EF89CE861CA68AE5005E810F /* UIScrollView+MJRefresh.m in Sources */,
+				EF89CE821CA68AE5005E810F /* MJRefreshStateHeader.m in Sources */,
+				EF89CDED1CA683F6005E810F /* ADViewController.swift in Sources */,
+				EF89CEAD1CA69427005E810F /* SwiftDictModel.swift in Sources */,
+				EF89CE771CA68AE5005E810F /* MJRefreshComponent.m in Sources */,
+				EF89CE7F1CA68AE5005E810F /* MJRefreshBackStateFooter.m in Sources */,
+				EF89CE791CA68AE5005E810F /* MJRefreshHeader.m in Sources */,
+				EF89CDA81CA648B7005E810F /* AppDelegate.swift in Sources */,
+				EF89CE7B1CA68AE5005E810F /* MJRefreshAutoNormalFooter.m in Sources */,
+				EF89CE751CA68AE5005E810F /* MJRefreshAutoFooter.m in Sources */,
+				EF89CE7E1CA68AE5005E810F /* MJRefreshBackNormalFooter.m in Sources */,
+				EF89CE761CA68AE5005E810F /* MJRefreshBackFooter.m in Sources */,
+				EF89CDE71CA66AC6005E810F /* Color + Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDB71CA648B7005E810F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89CDC01CA648B7005E810F /* KayouyouFirstSwiftCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89CDC21CA648B7005E810F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89CDCB1CA648B7005E810F /* KayouyouFirstSwiftCaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF89CDBD1CA648B7005E810F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF89CDA31CA648B7005E810F /* KayouyouFirstSwiftCase */;
+			targetProxy = EF89CDBC1CA648B7005E810F /* PBXContainerItemProxy */;
+		};
+		EF89CDC81CA648B7005E810F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF89CDA31CA648B7005E810F /* KayouyouFirstSwiftCase */;
+			targetProxy = EF89CDC71CA648B7005E810F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF89CDB31CA648B7005E810F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF89CDB41CA648B7005E810F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF89CE401CA68AE5005E810F /* UMSocialLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF89CE411CA68AE5005E810F /* en */,
+				EF89CE591CA68AE5005E810F /* zh-Hans */,
+			);
+			name = UMSocialLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF89CDCD1CA648B7005E810F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF89CDCE1CA648B7005E810F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF89CDD01CA648B7005E810F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F76E23F03A2D6B65A201EFF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+				);
+				INFOPLIST_FILE = KayouyouFirstSwiftCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_4.4",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		EF89CDD11CA648B7005E810F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985A426ED17CB64C7E3FBFF6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+				);
+				INFOPLIST_FILE = KayouyouFirstSwiftCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_4.4",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		EF89CDD31CA648B7005E810F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayouyouFirstSwiftCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayouyouFirstSwiftCase.app/KayouyouFirstSwiftCase";
+			};
+			name = Debug;
+		};
+		EF89CDD41CA648B7005E810F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayouyouFirstSwiftCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayouyouFirstSwiftCase.app/KayouyouFirstSwiftCase";
+			};
+			name = Release;
+		};
+		EF89CDD61CA648B7005E810F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayouyouFirstSwiftCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayouyouFirstSwiftCase;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EF89CDD71CA648B7005E810F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayouyouFirstSwiftCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yeyanyyang.KayouyouFirstSwiftCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayouyouFirstSwiftCase;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF89CD9F1CA648B6005E810F /* Build configuration list for PBXProject "KayouyouFirstSwiftCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89CDCD1CA648B7005E810F /* Debug */,
+				EF89CDCE1CA648B7005E810F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF89CDCF1CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89CDD01CA648B7005E810F /* Debug */,
+				EF89CDD11CA648B7005E810F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF89CDD21CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89CDD31CA648B7005E810F /* Debug */,
+				EF89CDD41CA648B7005E810F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF89CDD51CA648B7005E810F /* Build configuration list for PBXNativeTarget "KayouyouFirstSwiftCaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89CDD61CA648B7005E810F /* Debug */,
+				EF89CDD71CA648B7005E810F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF89CDAE1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF89CDAF1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodel */,
+			);
+			currentVersion = EF89CDAF1CA648B7005E810F /* KayouyouFirstSwiftCase.xcdatamodel */;
+			path = KayouyouFirstSwiftCase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF89CD9C1CA648B6005E810F /* Project object */;
+}
